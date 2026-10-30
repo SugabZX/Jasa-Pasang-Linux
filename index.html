@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinuxKop - Jasa Pasang Linux Profesional</title>
+    <meta name="description" content="Jasa pasang, perbaikan, dan konfigurasi Linux profesional. Dual boot, multi boot, migrasi data, dan optimasi untuk semua distro populer.">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fa-brands fa-linux me-1"></i> Linux<span class="text-accent">Kop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#distro">Distro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <a href="#kontak" class="btn btn-accent btn-sm ms-lg-3 mt-3 mt-lg-0 rounded-pill px-3">
+                    <i class="fa-solid fa-terminal me-1"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white order-lg-1 order-2">
+                    <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Siap pasang hari ini</span>
+                    <h1 class="display-4 fw-bold mb-3">Jasa Pasang <span class="text-accent">Linux</span><br>yang Profesional &amp; Bergaransi</h1>
+                    <p class="lead mb-4">Beralih ke Linux jadi mudah. Kami membantu instalasi, dual boot, migrasi data, hingga optimasi sistem — untuk semua distro populer, dengan garansi dan dukungan purna jual.</p>
+                    <div class="hero-cta">
+                        <a href="#kontak" class="btn btn-accent btn-lg rounded-pill px-4 me-2 mb-2">
+                            <i class="fa-solid fa-paper-plane me-1"></i> Konsultasi Gratis
+                        </a>
+                        <a href="#layanan" class="btn btn-outline-light btn-lg rounded-pill px-4 mb-2">
+                            Lihat Layanan
+                        </a>
+                    </div>
+                    <div class="hero-trust text-white-50 mt-4">
+                        <span><i class="fa-solid fa-circle-check text-accent"></i> +500 PC terpasang</span>
+                        <span class="mx-2">·</span>
+                        <span><i class="fa-solid fa-shield-halved text-accent"></i> Garansi 30 hari</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <div class="terminal-card">
+                        <div class="terminal-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">bash — root@linuxkop</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="mb-1"><span class="prompt">root@linuxkop:~#</span> sudo ./pasang-linux.sh</p>
+                            <p class="mb-1 text-muted">[ ok ] Memeriksa perangkat keras ........ OK</p>
+                            <p class="mb-1 text-muted">[ ok ] Membaca partisi disk ........ OK</p>
+                            <p class="mb-1 text-muted">[ ok ] Menginstal sistem ............ OK</p>
+                            <p class="mb-1 text-muted">[ ok ] Mengkonfigurasi boot ........ OK</p>
+                            <p class="mb-0 success"><span class="prompt">[selesai]</span> Selamat datang di Linux! <i class="fa-solid fa-penguin"></i></p>
+                            <p class="prompt mb-0 blink">root@linuxkop:~# <span class="cursor">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ TENTANG ============ -->
+    <section id="tentang" class="py-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about-image-wrap">
+                        <img src="img/ubuntu.jpg" class="img-fluid rounded-4 shadow-lg" alt="Logo Ubuntu">
+                        <div class="about-badge">
+                            <i class="fa-solid fa-award"></i>
+                            <div>
+                                <strong>Terpercaya</strong><br>
+                                <small>Sejak 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Tentang Kami</span>
+                    <h2 class="section-title">Solusi Lengkap untuk Beralih &amp; Menggunakan Linux</h2>
+                    <p class="text-muted">LinuxKop adalah jasa teknis yang fokus pada instalasi dan pendampingan sistem operasi Linux. Kami memahami kendala umum pengguna baru — mulai dari takut kehilangan data, bingung memilih distro, hingga perlu menjalankan Windows dan Linux secara bersamaan.</p>
+                    <p class="text-muted">Tim kami terdiri dari teknisi bersertifikat yang menguasai lebih dari 20 distro Linux. Setiap pemasangan dilakukan dengan prosedur aman, dibersihkan dari sampah sistem, dan diuji fungsi perangkat kerasnya sebelum diserahkan.</p>
+                    <ul class="list-unstyled about-list">
+                        <li><i class="fa-solid fa-check-circle text-accent"></i> Gratis konsultasi pemilihan distro yang cocok</li>
+                        <li><i class="fa-solid fa-check-circle text-accent"></i> Backup &amp; migrasi data tanpa risiko hilang</li>
+                        <li><i class="fa-solid fa-check-circle text-accent"></i> Garansi kerja 30 hari &amp; dukungan via chat</li>
+                        <li><i class="fa-solid fa-check-circle text-accent"></i> Melayani onsite (Jogja) &amp; remote seluruh Indonesia</li>
+                    </ul>
+                    <a href="#layanan" class="btn btn-dark btn-lg rounded-pill px-4 mt-2">Pelajari Layanan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LAYANAN ============ -->
+    <section id="layanan" class="py-section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Layanan</span>
+                <h2 class="section-title">Layanan yang Kami Tawarkan</h2>
+                <p class="text-muted mx-auto">Pilih kebutuhanmu, kami tangani dari awal sampai siap pakai</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-download"></i></div>
+                        <h5 class="mt-3">Instalasi Tunggal</h5>
+                        <p class="text-muted">Pasang Linux sebagai sistem utama pada laptop/PC baru atau bekas. Termasuk driver dan aplikasi dasar.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-columns"></i></div>
+                        <h5 class="mt-3">Dual Boot</h5>
+                        <p class="text-muted">Jalankan Windows dan Linux berdampingan dengan partisi aman dan bootloader yang rapi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h5 class="mt-3">Multi Boot</h5>
+                        <p class="text-muted">Pasang beberapa distro Linux sekaligus dalam satu mesin untuk kebutuhan berbeda.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                        <h5 class="mt-3">Migrasi Data</h5>
+                        <p class="text-muted">Pindahkan dokumen, foto, dan pengaturan dari Windows/macOS ke Linux dengan aman.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <h5 class="mt-3">Repair &amp; Pemulihan</h5>
+                        <p class="text-muted">Perbaiki bootloader rusak, sistem error, hingga pulihkan Linux yang tidak bisa booting.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h5 class="mt-3">Optimasi &amp; Maintenance</h5>
+                        <p class="text-muted">Bersihkan sistem, tingkatkan performa, update, dan pasang software sesuai kebutuhan kerja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ DISTRO ============ -->
+    <section id="distro" class="py-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag"><i class="fa-brands fa-linux"></i> Distro</span>
+                <h2 class="section-title">Distro Linux yang Kami Pasang</h2>
+                <p class="text-muted mx-auto">Kami menguasai instalasi berbagai distro populer — dari yang ramah pemula hingga kelas advanced</p>
+            </div>
+            <div class="row g-3 justify-content-center distro-grid" id="distroGrid">
+                <!-- Kartu distro di-generate/ditulis manual di bawah -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/ubuntu.jpg" alt="Ubuntu"><h6>Ubuntu</h6><small>Ramah pemula</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/debian.jpg" alt="Debian"><h6>Debian</h6><small>Stabil &amp; bebas</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/fedora.jpg" alt="Fedora"><h6>Fedora</h6><small>Teknologi terkini</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/archlinux.jpg" alt="Arch Linux"><h6>Arch Linux</h6><small>Rolling release</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/linuxmint.jpg" alt="Linux Mint"><h6>Linux Mint</h6><small>Ringan &amp; siap pakai</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/centos.jpg" alt="CentOS"><h6>CentOS</h6><small>Untuk server</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/opensuse.jpg" alt="openSUSE"><h6>openSUSE</h6><small>Fleksibel</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/manjaro.jpg" alt="Manjaro"><h6>Manjaro</h6><small>Arch yang mudah</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/popos.jpg" alt="Pop!_OS"><h6>Pop!_OS</h6><small>Developer &amp; gaming</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/kali.jpg" alt="Kali Linux"><h6>Kali Linux</h6><small>Keamanan siber</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/mxlinux.jpg" alt="MX Linux"><h6>MX Linux</h6><small>Ringan &amp; efisien</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/elementary.jpg" alt="elementary OS"><h6>elementary OS</h6><small>Estetika elegan</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/gentoo.jpg" alt="Gentoo"><h6>Gentoo</h6><small>Performa tinggi</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/alpine.jpg" alt="Alpine Linux"><h6>Alpine</h6><small>Minimalis &amp; aman</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/solus.jpg" alt="Solus"><h6>Solus</h6><small>Desktop modern</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/nixos.jpg" alt="NixOS"><h6>NixOS</h6><small>Deklaratif</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/zorin.jpg" alt="Zorin OS"><h6>Zorin OS</h6><small>Mudah dari Windows</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/deepin.jpg" alt="Deepin"><h6>Deepin</h6><small>Antarmuka cantik</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/slackware.jpg" alt="Slackware"><h6>Slackware</h6><small>Distro veteran</small></div></div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6"><div class="distro-card"><img src="img/endevour.jpg" alt="EndeavourOS"><h6>EndeavourOS</h6><small>Arch tanpa ribet</small></div></div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#kontak" class="btn btn-outline-dark rounded-pill px-4">Tidak yakin pilih yang mana? <strong>Konsultasi gratis →</strong></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ KEUNGGULAN ============ -->
+    <section id="keunggulan" class="py-section bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag tag-light"><i class="fa-solid fa-star"></i> Keunggulan</span>
+                <h2 class="section-title title-light">Mengapa Memilih LinuxKop?</h2>
+            </div>
+            <div class="row g-4 text-center mb-5">
+                <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num" data-target="500">0</div><div class="stat-label">PC Terpasang</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num" data-target="20">0</div><div class="stat-label">Distro Dikuasai</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num" data-target="98">0</div><div class="stat-label">% Puas</div></div></div>
+                <div class="col-6 col-md-3"><div class="stat-item"><div class="stat-num" data-target="30">0</div><div class="stat-label">Hari Garansi</div></div></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3"><div class="advantage-item"><i class="fa-solid fa-headset text-accent"></i><h6>Support Responsif</h6><p class="text-white-50 small">Bantuan via chat setelah instalasi selesai.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="advantage-item"><i class="fa-solid fa-lock text-accent"></i><h6>Data Aman</h6><p class="text-white-50 small">Prosedur backup sebelum setiap pekerjaan.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="advantage-item"><i class="fa-solid fa-tag text-accent"></i><h6>Harga Transparan</h6><p class="text-white-50 small">Kisaran harga jelas, tanpa biaya tersembunyi.</p></div></div>
+                <div class="col-md-6 col-lg-3"><div class="advantage-item"><i class="fa-solid fa-microchip text-accent"></i><h6>Rapi &amp; Bersih</h6><p class="text-white-50 small">Sistem dibersihkan &amp; dioptimalkan sebelum serah.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ KONTAK ============ -->
+    <section id="kontak" class="py-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="section-tag"><i class="fa-solid fa-envelope"></i> Kontak</span>
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="text-muted">Kirim pesan, ceritakan perangkat dan kebutuhanmu, kami akan balas dengan rekomendasi distro &amp; penawaran.</p>
+                    <div class="contact-info">
+                        <div><i class="fa-solid fa-location-dot text-accent"></i><div><strong>Alamat</strong><br><span class="text-muted">Jl. Kaliurang KM 7,5, Yogyakarta</span></div></div>
+                        <div><i class="fa-solid fa-phone text-accent"></i><div><strong>WhatsApp</strong><br><span class="text-muted">+62 812-3456-7890</span></div></div>
+                        <div><i class="fa-solid fa-envelope text-accent"></i><div><strong>Email</strong><br><span class="text-muted">halo@linuxkop.id</span></div></div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-card">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" for="nama">Nama Lengkap <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+                                    <div class="invalid-feedback">Nama wajib diisi.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="nama@email.com" required>
+                                    <div class="invalid-feedback">Masukkan email yang valid.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="distro">Distro Incaran</label>
+                                    <select class="form-select" id="distro" name="distro">
+                                        <option value="" selected>Pilih distro (opsional)</option>
+                                        <option>Ubuntu</option><option>Fedora</option><option>Debian</option>
+                                        <option>Linux Mint</option><option>Arch / Manjaro</option><option>Kali Linux</option>
+                                        <option>Belum tahu, butuh saran</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" for="layanan">Jenis Layanan</label>
+                                    <select class="form-select" id="layanan" name="layanan">
+                                        <option value="" selected>Pilih layanan</option>
+                                        <option>Instalasi Tunggal</option><option>Dual Boot</option><option>Multi Boot</option>
+                                        <option>Migrasi Data</option><option>Repair</option><option>Optimasi</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" for="pesan">Pesan <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="pesan" name="pesan" rows="4" placeholder="Jelaskan perangkat &amp; kebutuhanmu..." required></textarea>
+                                    <div class="invalid-feedback">Pesan wajib diisi.</div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-accent btn-lg rounded-pill px-4">
+                                        <i class="fa-solid fa-paper-plane me-1"></i> Kirim Pesan
+                                    </button>
+                                    <span class="form-text ms-2 d-none" id="formSuccess"><i class="fa-solid fa-circle-check text-accent"></i> Pesan terkirim! Kami akan membalas segera.</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fa-brands fa-linux text-accent"></i> Linux<span class="text-accent">Kop</span></h4>
+                    <p class="text-white-50">Jasa pasang dan pendampingan Linux profesional. Mudah, aman, bergaransi.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-title">Menu</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#tentang">Tentang</a></li>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#distro">Distro</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h6 class="footer-title">Layanan</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#layanan">Instalasi Tunggal</a></li>
+                        <li><a href="#layanan">Dual &amp; Multi Boot</a></li>
+                        <li><a href="#layanan">Migrasi Data</a></li>
+                        <li><a href="#layanan">Repair &amp; Optimasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Kontak</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="fa-solid fa-location-dot me-2"></i> Yogyakarta, Indonesia</li>
+                        <li><i class="fa-solid fa-phone me-2"></i> +62 812-3456-7890</li>
+                        <li><i class="fa-solid fa-envelope me-2"></i> halo@linuxkop.id</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-0 text-white-50 small">&copy; 2024 LinuxKop. Dibuat oleh Bagus Anderias Liunokas.</p>
+                <p class="mb-0 text-white-50 small">Dibangun dengan <span class="text-danger">&hearts;</span> menggunakan Bootstrap 5</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="btn btn-accent rounded-circle" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
